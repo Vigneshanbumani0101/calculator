@@ -5,7 +5,7 @@ Array.from(document.getElementsByClassName("value")).forEach(button => {
             try {
                 result.value = eval(document.getElementById("expression").value);
             } catch {
-                result.value = "error";
+                result.value = "invalid expression";
             }
         } else if (button.value == 'clear') {
             result.value = "";
